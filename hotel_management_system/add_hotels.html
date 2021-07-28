@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "./add_hotel.css" />
+    <link rel="stylesheet" href = "./css/add_hotel.css" />
     <title>Add Hotels</title>
+    <script>
+        function validate() {
+            event.preventDefault();
+            console.log(document.getElementById("hotel_name").value);
+            return true;
+        }
+    </script>
 </head>
 <body>
-    <h1>Add Hotels</h1>
-    <div class = "add__hotel__form">
-        <form>
-            <label>Hotel Name</label>
-            <input type = "text" placeholder = "Enter the Hotel Name" />
-            <label>Category</label>
-            <select>
-                <option>Select the category</option>
-                <option>Five Star Hotel</option>
-                <option>Four Star Hotel</option>
-                <option>Three Star Hotel</option>
-                <option>Two Star Hotel</option>
-            </select>
-            <label>Total Rooms</label>
-            <input type = "text" placeholder = "Enter the Total Rooms" />
-            <label>Address</label>
-            <textarea  placeholder = "Enter the Address" rows="10" cols="50"></textarea>
-            <label>Pincode</label>
-            <input type = "text" placeholder = "Enter the Pincode" />
-            <label>Hotel Phone Number</label>
-            <input type = "text" placeholder = "Enter the Hotel Phone Number" />
-            <label>Personal Mobile Number</label>
-            <input type = "text" placeholder = "Enter the Personal Mobile Number" />
-            <div class = "add__hotel__button">
-                <button type="submit">Add Hotel</button>
-            </div>
-        </form>
+    <div class = "add__hotel__heading">
+        <h1>Add Hotels</h1>
+    </div>
+    <div class = "notification">
+        <h3>Hotel Details are stored successfully</h3>
+    </div>
+    <div class = "notification-danger">
+        <h3>Hotel Details are stored successfully</h3>
+    </div>
+    <div class = "add__hotels__body">
+        <div class = "add__hotel__form">
+            <form autocomplete = "off" onsubmit="return validate()">
+                <label>Hotel Name</label>
+                <input type = "text" id = "hotel_name" name = "hotel_name" placeholder = "Enter the Hotel Name" />
+                <label>Category</label>
+                <select>
+                    <option>Select the category</option>
+                    <option>1 cot bed</option>
+                    <option>2 cot bed</option>
+                    <option>3 cot bed</option>
+                    <option>4 cot bed</option>
+                </select>
+                <label>Rooms</label>
+                <input type = "text" placeholder = "Enter the Total Rooms" />
+                <label>Address</label>
+                <textarea  placeholder = "Enter the Address" rows="10" cols="50"></textarea>
+                <label>Pincode</label>
+                <input type = "text" placeholder = "Enter the Pincode" />
+                <label>Hotel Phone Number</label>
+                <input type = "text" placeholder = "Enter the Hotel Phone Number" />
+                <label>Personal Mobile Number</label>
+                <input type = "text" placeholder = "Enter the Personal Mobile Number" />
+                <div class = "add__hotel__button">
+                    <button type="submit">Add Hotel</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

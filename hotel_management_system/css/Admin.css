@@ -410,4 +410,18 @@ span {
     .list__of__hotel__card, .list__of__booking__details {
         margin-bottom: 30px;   
     }
+
+    .page__heading > h1 {
+        font-size: 42px;
+    }
+
+    .admin__page__animation__body {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 850px) {
+    .page__heading > h1 {
+        font-size: 22px;
+    }
 }
