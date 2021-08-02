@@ -167,23 +167,10 @@ span {
     padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* cards */
-
-.list__of__hotel__card {
-    border: 0.10px solid black;
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
-    transition: transform 1s;
-    cursor: pointer;
-    position: relative;
-    top: 100px;
-    /* animation: moveup 2s 1;
-    animation-fill-mode: forwards; */
-}
 
 .list__of__booking__details {
     border: 0.10px solid black;
@@ -220,13 +207,6 @@ span {
 
 /* End of cards */
 
-.list__of__hotel__image {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 140px;
-    top: 40px;
-}
 
 .list__of__booking__image {
     position: relative;
@@ -244,48 +224,40 @@ span {
     height: 100px;
 }
 
-.list__of__hotel__title {
-    position: absolute;
-    top: 155px;
-    left: 125px;
-    color: red;
-}
 
 .list__of__booking__title {
     position: absolute;
     top: 155px;
-    left: 119px;
+    left: 108px;
     color: red;
 }
 
 .list__of__user__title {
     position: absolute;
     top: 155px;
-    left: 135px;
+    left: 125px;
     color: red;
 }
 
-.list__of__hotels__content, .list__of__bookings__content, .list__of__users__content {
+.list__of__bookings__content, .list__of__users__content {
     margin: 100px;
     height: 350px;
     display: flex;
     align-items: center;
 }   
 
-.list__of__hotels__content__image, .list__of__bookings__content__image, .list__of__users__content__image {
+.list__of__bookings__content__image, .list__of__users__content__image {
     position: relative;
 } 
 
-.list__of__hotels__content__message, .list__of__bookings__content__message, .list__of__users__content__message {
+.list__of__bookings__content__message, .list__of__users__content__message {
     position: relative;
     float: right;
     font-size: 30px;
     margin-left: 250px;
 }
 
-
-
-.list__of__hotel__content, .list__of__booking__content, .list__of__user__content {
+.list__of__booking__content, .list__of__user__content {
     position: relative;
     top: 80px;
     font-size: 20px;
@@ -294,7 +266,7 @@ span {
     
 }
 
-.list__of__hotel__content > ul > li, .list__of__booking__content > ul > li, .list__of__user__content > ul > li {
+.list__of__booking__content > ul > li, .list__of__user__content > ul > li {
     padding: 10px;
 }
 
@@ -407,7 +379,7 @@ span {
         align-items: center;
     }
 
-    .list__of__hotel__card, .list__of__booking__details {
+    .list__of__booking__details {
         margin-bottom: 30px;   
     }
 
