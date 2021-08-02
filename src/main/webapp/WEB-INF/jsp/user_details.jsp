@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel = "stylesheet" href = "<%= request.getContextPath() %>/resources/css/user_details.css" />
+</head>
+<body>
+    <div class = "heading">
+        <h1>User Details</h1>
+    </div>
+    <!-- <div>
+        <table class = "update__table">
+            <tr>
+            <th>Hotel Name</th>
+            <th>Hotel Address</th>
+            <th>Category</th>
+            <th>Rooms</th>
+            <th>Personal Contact Nnumber</th>
+            <th>Hotel Phone Nnumber</th>
+            <th>Action</th>
+            </tr>
+            <tr>
+                <td>Ashok Hotel</td>
+                <td>Thanjavur</td>
+                <td>1 cot bed</td>
+                <td>250</td>
+                <td>8610901273</td>
+                <td>04362-271061</td>
+                <td>
+                    <div>
+                        <button>Delete</button>
+                    </div>
+                </td>
+            </tr>   
+            
+        </table>
+    </div> -->
+</body>
+</html>
